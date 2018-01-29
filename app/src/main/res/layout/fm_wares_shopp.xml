@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wares_shopp_bg"
+    android:descendantFocusability="blocksDescendants">
+
+    <shopping.gd.com.yw.gdshoppingmail.view.ScrollInterceptScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:paddingBottom="@dimen/dp45">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@mipmap/top"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp160" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp10"
+                        android:layout_weight="1"
+                        android:text="1822元"
+                        android:textColor="@color/wares_shopp_price_color"
+                        android:textSize="@dimen/sp18" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp10"
+                        android:text="超高清"
+                        android:textColor="@color/at_merchantdetial_item_discount"
+                        android:textSize="@dimen/dp14" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:text="SKYWorth/创维 42x4 42英寸 智能网络电视LED高清超薄平板电视s"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp05"
+                android:gravity="center_horizontal"
+                android:text="@string/quality"
+                android:textColor="@color/wares_shopp_quailt" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="@string/type"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants"
+                    android:paddingEnd="@dimen/dp10"
+                    android:paddingStart="@dimen/dp10">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/wares_shopptype_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="@string/count"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp100"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp20"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@drawable/button_border_search"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="+"
+                        android:textSize="@dimen/sp20" />
+
+                    <TextView
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="-"
+                        android:textSize="@dimen/sp20" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="@string/shoppevalute" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/wares_shoppevalute_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp10" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="@dimen/dp116"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:background="@drawable/wares_evlaute_bg"
+                    android:gravity="center"
+                    android:text="@string/serach_all_evalute"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp12" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp10"
+                android:paddingTop="@dimen/dp10"
+                android:text="@string/pull_down"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14" />
+
+        </LinearLayout>
+    </shopping.gd.com.yw.gdshoppingmail.view.ScrollInterceptScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp30"
+            android:orientation="vertical"
+            android:padding="@dimen/dp05">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/gwc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客服"
+                android:textSize="@dimen/sp10" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:text="¥1821"
+            android:textColor="@color/wares_shopp_price"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/addshopp_bg"
+            android:gravity="center"
+            android:text="@string/add_shopp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/pay_but_bt"
+            android:gravity="center"
+            android:text="@string/paybut"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14" />
+    </LinearLayout>
+</RelativeLayout>

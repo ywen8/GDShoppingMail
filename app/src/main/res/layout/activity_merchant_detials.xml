@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <shopping.gd.com.yw.gdshoppingmail.view.ScrollInterceptScrollView
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include layout="@layout/activity_brand_titlebar" />
+
+    <include layout="@layout/activity_merchant_item" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="创维"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14" />
+
+        <View
+            android:layout_width="@dimen/dp1"
+            android:layout_height="match_parent"
+            android:background="@color/fm_classify_view" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="创维"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14" />
+
+        <View
+            android:layout_width="@dimen/dp1"
+            android:layout_height="match_parent"
+            android:background="@color/fm_classify_view" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="创维"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14" />
+
+        <View
+            android:layout_width="@dimen/dp1"
+            android:layout_height="match_parent"
+            android:background="@color/fm_classify_view" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="创维"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14" />
+    </LinearLayout>
+    <RelativeLayout
+        android:descendantFocusability="blocksDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/activity_merchant_detial_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/fm_classify_view" />
+    </RelativeLayout>
+    </LinearLayout>
+    </shopping.gd.com.yw.gdshoppingmail.view.ScrollInterceptScrollView>
+</RelativeLayout>

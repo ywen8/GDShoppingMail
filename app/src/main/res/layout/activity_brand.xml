@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <shopping.gd.com.yw.gdshoppingmail.view.ScrollInterceptScrollView
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_brand_titlebar" />
+
+        <!--<TextView-->
+            <!--android:textColor="@color/black"-->
+            <!--android:id="@+id/activity_brand_tv_refre"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/dp10"-->
+            <!--android:layout_marginTop="@dimen/dp10"-->
+            <!--android:text="@string/refre_brand"-->
+            <!--android:textSize="@dimen/sp18" />-->
+
+        <!--<shopping.gd.com.yw.gdshoppingmail.view.MyGridView-->
+            <!--android:id="@+id/activity_brand_top_gv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/dp10"-->
+            <!--android:layout_marginRight="@dimen/dp10"-->
+            <!--android:layout_marginTop="@dimen/dp10"-->
+            <!--android:horizontalSpacing="10dp"-->
+            <!--android:numColumns="3"-->
+            <!--android:stretchMode="columnWidth"-->
+            <!--android:verticalSpacing="@dimen/dp10" />-->
+
+        <!--<View-->
+            <!--android:layout_marginTop="@dimen/dp20"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/dp1"-->
+            <!--android:layout_marginLeft="@dimen/dp10"-->
+            <!--android:layout_marginRight="@dimen/dp10"-->
+            <!--android:background="@color/fm_classify_view" />-->
+
+        <!--<TextView-->
+            <!--android:textColor="@color/black"-->
+            <!--android:id="@+id/activity_brand_tv_collent"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/dp10"-->
+            <!--android:layout_marginTop="@dimen/dp10"-->
+            <!--android:text="@string/brand_collent"-->
+            <!--android:textSize="@dimen/sp18" />-->
+        <RelativeLayout
+            android:descendantFocusability="blocksDescendants"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/activity_brand_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+    </shopping.gd.com.yw.gdshoppingmail.view.ScrollInterceptScrollView>
+
+    <shopping.gd.com.yw.gdshoppingmail.view.QuickIndexBar
+        android:id="@+id/activity_brand_right"
+        android:layout_width="@dimen/dp36"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp65"
+        android:background="@color/transparent"
+        android:padding="@dimen/dp06" />
+
+</RelativeLayout>

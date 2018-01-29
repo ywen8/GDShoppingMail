@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_marginBottom="@dimen/dp50"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <shopping.gd.com.yw.gdshoppingmail.view.ScrollviewPager
+            android:id="@+id/vp_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@color/white">
+
+        <RadioGroup
+            android:id="@+id/rg_home_viewpager_contorl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <shopping.gd.com.yw.gdshoppingmail.view.PengRadioButton
+                android:id="@+id/activity_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawablePadding="@dimen/dp05"
+                android:gravity="center"
+                android:text="@string/home"
+                android:textColor="@drawable/radiobutton_select_textcolor"
+                app:peng_drawableTop="@drawable/tabbar_home"
+                app:peng_drawableTopHeight="@dimen/dp25"
+                app:peng_drawableTopWith="@dimen/dp25" />
+
+            <shopping.gd.com.yw.gdshoppingmail.view.PengRadioButton
+                android:id="@+id/activity_shoppingcar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="@dimen/dp05"
+                android:gravity="center"
+                android:text="@string/shopping_car"
+                android:textColor="@drawable/radiobutton_select_textcolor"
+                app:peng_drawableTop="@drawable/tabbar_shoppingcar"
+                app:peng_drawableTopHeight="@dimen/dp25"
+                app:peng_drawableTopWith="@dimen/dp25" />
+
+            <shopping.gd.com.yw.gdshoppingmail.view.PengRadioButton
+                android:id="@+id/activity_classify"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="@dimen/dp05"
+                android:gravity="center"
+                android:text="@string/classify"
+                android:textColor="@drawable/radiobutton_select_textcolor"
+                app:peng_drawableTop="@drawable/tabbar_classify"
+                app:peng_drawableTopHeight="@dimen/dp15"
+                app:peng_drawableTopWith="@dimen/dp15" />
+
+            <shopping.gd.com.yw.gdshoppingmail.view.PengRadioButton
+                android:id="@+id/activity_my"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="@dimen/dp05"
+                android:gravity="center"
+                android:text="@string/my"
+                android:textColor="@drawable/radiobutton_select_textcolor"
+                app:peng_drawableTop="@drawable/tabbar_my"
+                app:peng_drawableTopHeight="@dimen/dp15"
+                app:peng_drawableTopWith="@dimen/dp15" />
+
+        </RadioGroup>
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

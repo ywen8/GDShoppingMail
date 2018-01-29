@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shopping.gd.com.yw.gdshoppingmail.view.ScrollInterceptScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/address_add_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_brand_titlebar" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:background="@color/black" />
+        <LinearLayout
+            android:id="@+id/activity_address_add"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@color/address_add_bg"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp25"
+                    android:layout_height="@dimen/dp25"
+                    android:src="@mipmap/gwc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_address"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:descendantFocusability="blocksDescendants"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/activity_address_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/address_add_bg" />
+        </RelativeLayout>
+    </LinearLayout>
+</shopping.gd.com.yw.gdshoppingmail.view.ScrollInterceptScrollView>

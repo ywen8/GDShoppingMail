@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_brand_titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/dp10"
+        android:layout_marginStart="@dimen/dp10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activity_urle_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:text="广电甄选APP开业了"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp18" />
+
+        <ImageView
+            android:id="@+id/activity_urle_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp120"
+            android:scaleType="fitXY"
+            android:src="@mipmap/top" />
+
+        <TextView
+            android:id="@+id/activity_urle_detial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:text="如果你无法简洁的表达你的想法，那只能说明你还你够了解它。如果你无法简洁的表达你的想法，那只能说明你还你够了解它。如果你无法简洁的表达你的想法，那只能说明你还你够了解它。如果你无法简洁的表达你的想法，那只能说明你还你够了解它。"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentTop="true"
+        android:background="@color/addshopp_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/activity_obliation_content_tab"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/activity_obliation_ownorder"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawablePadding="@dimen/dp05"
+                    android:gravity="center"
+                    android:text="@string/all_orders"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/activity_obliation_obliga"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="@dimen/dp05"
+                    android:gravity="center"
+                    android:text="@string/obligation"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/activity_obliation_consignment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="@dimen/dp05"
+                    android:gravity="center"
+                    android:text="@string/consignment"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/activity_obliation_receiving"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="@dimen/dp05"
+                    android:gravity="center"
+                    android:text="@string/receiving"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/activity_obliation_refund"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="@dimen/dp05"
+                    android:gravity="center"
+                    android:text="@string/refund"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/activity_obliation_finish_all"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="@dimen/dp05"
+                    android:gravity="center"
+                    android:text="@string/finish_all"
+                    android:textColor="@color/white" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp02">
+
+                <View
+                    android:id="@+id/activity_obliation_ownorder_v"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp02"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <View
+                    android:id="@+id/activity_obliation_obliga_v"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp02"
+                    android:layout_weight="1"
+                    android:background="@color/transparent" />
+
+                <View
+                    android:id="@+id/activity_obliation_consignment_v"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp02"
+                    android:layout_weight="1"
+                    android:background="@color/transparent" />
+
+                <View
+                    android:id="@+id/activity_obliation_receiving_v"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp02"
+                    android:layout_weight="1"
+                    android:background="@color/transparent" />
+
+                <View
+                    android:id="@+id/activity_obliation_refund_v"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp02"
+                    android:layout_weight="1"
+                    android:background="@color/transparent" />
+
+                <View
+                    android:id="@+id/activity_obliation_finish_v"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp02"
+                    android:layout_weight="1"
+                    android:background="@color/transparent" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp50"
+        android:background="@color/fm_classify_view">
+
+        <shopping.gd.com.yw.gdshoppingmail.view.ScrollviewPager
+            android:id="@+id/activity_obliation_content_vg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants" />
+    </FrameLayout>
+
+</RelativeLayout>

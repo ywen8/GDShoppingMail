@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/adapter_li_refer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginLeft="@dimen/dp10"
+            android:id="@+id/adapter_tv_refer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14" />
+        <shopping.gd.com.yw.gdshoppingmail.view.MyGridView
+            android:layout_marginTop="@dimen/dp10"
+            android:id="@+id/fm_home_item_sales_gv"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:stretchMode="columnWidth"
+            android:horizontalSpacing="10dp"
+            android:numColumns="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fm_home_adapter_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp05"
+            android:paddingRight="@dimen/dp05">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp1"
+                android:layout_weight="1"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/adapter_laber_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="猜你喜欢"
+                android:textSize="@dimen/sp14" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp1"
+                android:layout_weight="1"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <shopping.gd.com.yw.gdshoppingmail.view.MyGridView
+            android:id="@+id/rv_img_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp05"
+            android:layout_marginRight="@dimen/dp05"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@color/view_black"
+            android:horizontalSpacing="10dp"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" />
+    </LinearLayout>
+</LinearLayout>

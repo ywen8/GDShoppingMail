@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50">
+
+        <LinearLayout
+            android:background="@color/addshopp_bg"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48">
+                <RadioButton
+                    android:textSize="@dimen/sp14"
+                    android:textColor="@color/white"
+                    android:text="@string/stay_ealuate"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <RadioButton
+                    android:gravity="center"
+                    android:textSize="@dimen/sp14"
+                    android:textColor="@color/white"
+                    android:text="@string/then_ealuate"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+            </RadioGroup>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp02">
+                <View
+                    android:background="@color/white"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+                <View
+                    android:background="@color/white"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_marginTop="@dimen/dp50"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <shopping.gd.com.yw.gdshoppingmail.view.ViewPagerIndicator
+            android:id="@+id/activity_evaluate_content_vg"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</RelativeLayout>

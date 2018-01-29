@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/fm_shopping_item_del_li"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp25"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp10"
+                android:src="@mipmap/gwc" />
+            <View
+                android:layout_width="@dimen/dp1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp10"
+                android:background="@color/fm_classify_view" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/fm_shopping_item_img"
+                android:layout_width="@dimen/dp90"
+                android:layout_height="@dimen/dp90"
+                android:layout_margin="@dimen/dp10"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp10">
+
+                <TextView
+                    android:id="@+id/fm_shopping_item_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="新会陈皮普洱茶熟茶叶"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@+id/fm_shopping_item_tv_detials"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:layout_marginTop="@dimen/dp05"
+                    android:text="【买即送体验包装4包+精美茶具一套】送礼自饮皆宜 香气浓郁口"
+                    android:textColor="@color/fm_shopping_adapter_detial"
+                    android:textSize="@dimen/sp12" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp05">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dp80"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/fm_shopping_item_liborer_li"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/fm_shopping_item_tv_add"
+                            android:layout_width="@dimen/dp25"
+                            android:layout_height="@dimen/dp25"
+                            android:gravity="center"
+                            android:text="+"
+                            android:textSize="@dimen/sp18" />
+
+                        <TextView
+                            android:id="@+id/fm_shopping_item_tv_number"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="1" />
+
+                        <TextView
+                            android:id="@+id/fm_shopping_item_tv_minus"
+                            android:layout_width="@dimen/dp30"
+                            android:layout_height="@dimen/dp30"
+                            android:gravity="center"
+                            android:text="—"
+                            android:textSize="@dimen/sp18" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/fm_shopping_item_tv_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:text="¥168.0"
+                            android:textColor="@color/colorAccent" />
+
+                        <TextView
+                            android:id="@+id/fm_shopping_item_tv_discount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp05"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:text="¥105.0"
+                            android:textColor="@color/bt_tx_color" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+            <include layout="@layout/separet_view"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

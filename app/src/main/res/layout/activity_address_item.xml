@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dl_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp10"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/dp10"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginStart="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/activity_address_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="王宏伟"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:id="@+id/activity_address_item_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp10"
+            android:text="18681886666"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activity_address_item_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginStart="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="西安市新城区新城广场4326"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@color/fm_classify_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/activity_address_item_set_img"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:padding="@dimen/dp10"
+            android:src="@mipmap/gwc" />
+
+        <TextView
+            android:id="@+id/activity_address_item_set_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/setaddress"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:padding="@dimen/dp10"
+                android:src="@mipmap/gwc" />
+
+            <TextView
+                android:id="@+id/activity_address_item_set_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:padding="@dimen/dp10"
+                android:src="@mipmap/gwc" />
+
+            <TextView
+                android:id="@+id/activity_address_item_set_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/del" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

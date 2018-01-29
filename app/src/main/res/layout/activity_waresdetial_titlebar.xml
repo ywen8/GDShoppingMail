@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp65"
+    android:background="@color/title_bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_top_fill" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/activity_waresdetial_back"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp10"
+            android:src="@mipmap/fl" />
+
+        <TextView
+            android:id="@+id/activity_waresdetial_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="@string/brand"
+            android:textSize="@dimen/sp17" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp15"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/activity_waresdetial_collect"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp25"
+                android:layout_marginEnd="@dimen/dp15"
+                android:src="@mipmap/gwc" />
+
+            <ImageView
+                android:id="@+id/activity_waresdetial_shared"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp25"
+                android:src="@mipmap/gwc" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_brand_titlebar" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginStart="@dimen/dp10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/my_integral"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/activity_integral_score"
+            android:text="16845"
+            android:textSize="@dimen/sp16"
+            android:layout_marginStart="@dimen/dp10"
+            android:textColor="@color/pay_but_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/activity_use_integral"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginStart="@dimen/dp10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/dp60">
+        <TextView
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="@string/use_intrgral"
+            android:textSize="@dimen/sp16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+
+            android:padding="@dimen/dp10"
+            android:src="@mipmap/gwc"
+            android:layout_width="@dimen/dp45"
+            android:layout_height="@dimen/dp45" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp20"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="@string/use_intrgral_detial"
+            android:textSize="@dimen/sp14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="@dimen/dp10"
+            android:id="@+id/activity_integral_detial_rv"
+            android:background="@color/integral_rv_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

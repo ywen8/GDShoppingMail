@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:id="@+id/activity_merchantdetial_item_ll"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/activity_merchantdetial_img"
+            android:layout_width="@dimen/dp160"
+            android:layout_height="@dimen/dp120"
+            android:layout_margin="@dimen/dp10"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp10">
+
+            <TextView
+                android:id="@+id/activity_merchantdetial_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="新会陈皮普洱茶熟茶叶"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp20" />
+
+            <TextView
+                android:id="@+id/activity_merchantdetial_detials"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp10"
+                android:singleLine="true"
+                android:text="【买即送体验包装4包+精美茶具一套】送礼自饮皆宜 香气浓郁口"
+                android:textColor="@color/fm_shopping_adapter_detial"
+                android:textSize="@dimen/sp12" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/activity_merchantdetial_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/means"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/activity_merchantdetial_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/at_merchantdetial_item_discount"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/means"
+                    android:textColor="@color/at_merchantdetial_item_discount"
+                    android:textSize="@dimen/sp14" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/separet_view" />
+</LinearLayout>

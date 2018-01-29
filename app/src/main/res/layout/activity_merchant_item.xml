@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/activity_merchant_item_li"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/activity_merchant_item_img"
+        android:layout_width="@dimen/dp80"
+        android:layout_height="@dimen/dp80"
+        android:layout_margin="@dimen/dp10" />
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/activity_merchant_item_name_tv"
+            android:text="商品名称"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="荐"
+            android:id="@+id/activity_merchant_detial_item_tv"
+            android:layout_marginTop="@dimen/dp10"
+            android:textColor="@color/at_brand_right_tv_color"
+            android:textSize="@dimen/sp14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/activiti_merchant_g_item_bt"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/dp10"
+            android:text="@string/guang"
+            android:textColor="@color/white"
+            android:background="@color/at_merchant_item_bt"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="@dimen/dp30" />
+    </LinearLayout>
+    <View
+        android:background="@color/fm_classify_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"/>
+</LinearLayout>
+

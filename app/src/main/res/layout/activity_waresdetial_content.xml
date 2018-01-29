@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentTop="true"
+        android:background="@color/addshopp_bg">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RadioGroup
+                android:id="@+id/activity_waresdetial_content_tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/fm_waresdetial_shopping"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawablePadding="@dimen/dp05"
+                    android:gravity="center"
+                    android:text="@string/wares"
+                    android:textColor="@drawable/wares_select_textcolor" />
+
+                <RadioButton
+                    android:id="@+id/fm_waresdetial_detial"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="@dimen/dp05"
+                    android:gravity="center"
+                    android:text="@string/detial"
+                    android:textColor="@drawable/wares_select_textcolor"/>
+
+                <RadioButton
+                    android:id="@+id/fm_waresdetial_evaluate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="@dimen/dp05"
+                    android:gravity="center"
+                    android:text="@string/evaluate"
+                    android:textColor="@drawable/wares_select_textcolor" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp50"
+        android:background="@color/fm_classify_view">
+
+        <shopping.gd.com.yw.gdshoppingmail.view.ScrollviewPager
+            android:id="@+id/activity_waresdetial_content_vg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants" />
+    </FrameLayout>
+
+</RelativeLayout>

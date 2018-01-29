@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shopping.gd.com.yw.gdshoppingmail.view.ScrollInterceptScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/transparent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/fm_classify_titlebar"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/fm_classify_left"
+                android:layout_weight="0.35"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <View
+                android:background="@color/fm_classify_view"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+            <include layout="@layout/fm_classify_right"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</shopping.gd.com.yw.gdshoppingmail.view.ScrollInterceptScrollView>

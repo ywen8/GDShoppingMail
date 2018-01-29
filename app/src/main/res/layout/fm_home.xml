@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <shopping.gd.com.yw.gdshoppingmail.view.ScrollInterceptScrollView
+        android:id="@+id/fm_home_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/home_bg"
+            android:orientation="vertical">
+
+            <include layout="@layout/fm_home_banner" />
+
+            <include layout="@layout/fm_home_inform" />
+
+            <include layout="@layout/fm_home_shopps" />
+        </LinearLayout>
+    </shopping.gd.com.yw.gdshoppingmail.view.ScrollInterceptScrollView>
+
+    <include layout="@layout/fm_home_titlebar"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+</RelativeLayout>

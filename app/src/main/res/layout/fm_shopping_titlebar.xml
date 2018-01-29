@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp65"
+    android:background="@color/home_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_top_fill" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp45"
+            android:layout_marginLeft="@dimen/dp10"
+            android:background="@color/white"
+            android:drawableLeft="@mipmap/fl"
+            android:drawablePadding="@dimen/dp05"
+            android:text="@string/back" />
+
+        <TextView
+            android:textSize="@dimen/sp17"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/shopping_car" />
+
+        <Button
+            android:id="@+id/fm_shopping_title_del"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp45"
+            android:background="@mipmap/fl"
+            android:drawablePadding="@dimen/dp05" />
+
+    </LinearLayout>
+</LinearLayout>

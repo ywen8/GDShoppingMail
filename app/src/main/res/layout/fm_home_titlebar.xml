@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp65"
+    android:id="@+id/fm_home_title_li"
+    android:gravity="center"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_top_fill" />
+
+    <LinearLayout
+        android:background="@color/transparent"
+        android:id="@+id/fm_lucen_li"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fm_home_search"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp30"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp13"
+            android:layout_weight="1"
+            android:background="@drawable/button_border_cor"
+            android:drawableLeft="@mipmap/fl"
+            android:drawablePadding="@dimen/dp05"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/dp20"
+            android:text="@string/search"
+            android:textColor="@color/fm_home_title_color"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:background="@color/transparent"
+            android:id="@+id/fm_home_register_tv"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp30"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_weight="0.15"
+            android:gravity="center_vertical"
+            android:text="@string/register"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:background="@color/transparent"
+            android:id="@+id/fm_home_login_tv"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp30"
+            android:layout_weight="0.15"
+            android:gravity="center_vertical"
+            android:text="@string/login"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14" />
+    </LinearLayout>
+</LinearLayout>

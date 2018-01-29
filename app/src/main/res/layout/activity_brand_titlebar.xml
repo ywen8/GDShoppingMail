@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp65"
+    android:background="@color/home_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_top_fill" />
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_height="@dimen/dp45">
+
+        <ImageView
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp10"
+            android:src="@mipmap/fl" />
+
+        <TextView
+            android:id="@+id/activity_merchant_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:text="@string/brand"
+            android:textSize="@dimen/sp17" />
+    </RelativeLayout>
+</LinearLayout>
